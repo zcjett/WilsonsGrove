@@ -6,6 +6,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="./images/favicon.ico" rel="icon">
+		<style>
+			/* Styles the button */
+			.accordion {
+			  	background-color: ffffff;
+			  	color: #444;
+			  	cursor: pointer;
+			  	width: 100%;
+			  	border: none;
+			  	text-align: left;
+			  	outline: none;
+			  	transition: 0.4s;
+			  	margin: 5px;
+			}
+			/* Unicode character for "plus" sign (+) */
+			.accordion:after{
+				content: '\02795'; 
+				float: right;
+			}
+			/* Unicode character for "minus" sign (-) */
+			.active:after{
+				content: "\2796"; 
+			}
+			/* Styles the accordian */
+			.panel{
+				padding: 0 18px;
+  				background-color: white;
+  				max-height: 0;
+  				overflow: hidden;
+  				transition: max-height 0.2s ease-out;
+			}
+			br {
+   				display: block;
+   				margin: 1px 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -26,36 +61,154 @@
 									</ul>
 								</header>
 
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>FAQ</h1>
+											<p>Frequently Asked Questions</p>
+										</header>
+										<p>If you have any questions that are not answered in this FAQ, please reach out to the board and let us know!</p>
+										<ul class="actions">
+											<li><a href="./contact_us.html" class="button big">Ask More Questions!</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/WG Snow.jpg" alt="" />
+									</span>
+								</section>
+
 							<!-- Content -->
 								<section>
-									<header class="main">
-										<h1>FAQ</h1>
-									</header>
+									<h2>General</h2>
 
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									<!-- Question -->
+									<button class="accordion">What is a Homeowners Association?</button>
+									<div class="panel">
+										<p>The Maryland Homeowners Association Act defines a homeowners association (HOA) as a person or entity with the authority to enforce the provisions of a declaration. HOAs are corporations that are created to manage planned communities, and their main purpose is to protect home values and maintain common areas. They are governed by their own documents, which include rules and regulations that vary from association to association. Some key things to know about HOAs in Maryland include:</p>
+									 		<ul>
+									    		<li><u>Membership</u> - Homeowners are automatically part of the HOA when they purchase a property in an HOA-controlled community.</li>
+									    		<li><u>Assessments</u> - HOAs collect regular assessments from homeowners to cover the cost of maintaining the neighborhood.</li>
+									    		<li><u>Legal standards</u> - HOAs and their boards of directors are subject to many of the same legal standards as corporate boards.</li>
+									    		<li><u>Enforcement</u> -  HOAs can ask the circuit court to order homeowners to stop or fix violations, and the court can order homeowners to take action.</li>
+									    		<li><u>Establishment</u> - To establish an HOA in Maryland, Articles of Incorporation must be created and filed with the State Department.</li>
+									  		</ul>
+									</div>
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<!-- Question -->
+									<button class="accordion">Where can I find a copy of the Maryland Homeowners Association Act?</button>
+									<div class="panel">
+										<p>
+											The Maryland Homeowners Association Act can be found on the <a href="https://mgaleg.maryland.gov/" target="_blank">MD General Assembly Website</a>. Go to Laws -> Statutes, select ‘Real Property’ under the ‘Articles’ dropdown and navigate to Section 11B. The MD HOA Act is section 11B-101 through 11B-118.
+										</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">What is a Board of Directors?</button>
+									<div class="panel">
+										<p>In Maryland, a board of directors is a governing body for an HOA that is responsible for making decisions and determining policies for the association. The board of directors is responsible for the following:</p>
+										<ul>
+										    <li>Ensuring that the association is run properly, including maintaining common areas, collecting fees, and ensuring that fees are fair.</li>
+										    <li>Ensuring that the community's governing documents are followed and enforced.</li>
+										    <li>Holding regular meetings to address association business, providing adequate notice to members.</li>
+										    <li>Managing the budget, including maintaining a reserve fund.</li>
+										    <li>Providing adequate insurance coverage.</li>
+										    <li>Managing elections.</li>
+									  	</ul>
+									  	<p>The Wilson’s Grove Board of Directors is made up of elected volunteers from the community. Positions include president, vice president, and treasurer.</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">What are the general governing documents for a HOA?</button>
+									<div class="panel">
+										<p>Some of the governing documents for an HOA include (in hierarchical order):</p>
+										<ul>
+								    		<li><u>Plat</u> - A recorded map that shows the location of the community and its structures, including units, lots, common areas, and limited common areas. The plat outlines the jurisdiction of the association. (Also known as a subdivision map).</li>
+										    <li><u>Declaration of Covenants, Conditions & Restrictions (CC&R)</u> - Provides the HOA with the power to enforce certain rules of the association. This is required to be signed by new home owners, and constitutes the contract between the home owner and the association. The CC&Rs include the association's covenant for assessments, which gives the association the right to charge dues to members.</li>
+										    <li><u>Articles of Incorporation</u> - Establishes the HOA as a legal entity (non-profit organization) and defines its name, purpose, and corporate structure.</li>
+										    <li><u>Bylaws</u> -  Outlines the duties and responsibilities of the board, including meeting requirements, how many seats are on the board, election procedures, and members' voting rights.</li>
+										    <li><u>Rules & Regulations </u> - Goes into more specifics compared to the CC&R. CC&R gives the HOA the right to enforce the rules and regulations, whereas the R&R specifies what is being enforced. The HOA has the authority to create new rules and regulations (subject to federal and state laws). If the R&R conflicts with the CC&R, the CC&R takes precedence.</li>
+								  		</ul>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">Where can in find the WG HOA Governing documents?</button>
+									<div class="panel">
+									 	<p>Navigate to Documents -> Governing Documents to find the CC&Rs, Articles of Incorporation, and Bylaws.</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">What is an HOA Management company?</button>
+									<div class="panel">
+									 	<p>An HOA management company is a professional service that manages the day-to-day operations of an HOA. They are hired by the HOA board to take on tasks that the board members can't or don't have time to do. Some tasks that a management company can assist with include:</p>
+										<ul>
+										    <li>Ensuring the association is well-maintained and that common areas are in good condition.</li>
+										    <li>Contracting with vendors for lawn care, pool maintenance, electrical maintenance, etc.</li>
+										    <li>Managing and balancing bank accounts and ledgers, providing financial reports, and maintaining reserve accounts.</li>
+										    <li>Coordinating resident requests and sharing important information about the community.</li>
+										    <li>Processing fines and late fees, and sending notices to homeowners about them.</li>
+										</ul>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">Who is the HOA management company for Wilson’s Grove?</button>
+									<div class="panel">
+									 	<p>The management company for the WG HOA is D.H. Bader. Their company website is <a href="https://www.dhbader.com/">https://www.dhbader.com/</a>.</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">How do I contact the HOA BoD or management company?</button>
+									<div class="panel">
+									 	<p>The preferred avenue of communication with the WG HOA BoD begins with contacting the HOA management company (D.H. Bader). This can be done via 2 different methods:</p>
+										<ul>
+										    <li><u>Via this portal (preferred)</u> - Navigate to Requests, select ‘General Request’, fill out the provided form and submit. The WG HOA and DH Bader have access to view these requests.</li>
+										    <li><u>Direct to the management lead</u> - If you have not received a response via the portal, you can contact Amanda Rhodes via email - arhodes@dhbader.com</li>
+										</ul>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">How do I become a member of the HOA Board?</button>
+									<div class="panel">
+								  		<p>The Board will hold elections for new board members once per year in the spring for any Board spots that are becoming vacant. To become a member, a resident may fill out an application and send it back to DH Bader when the call is put out in the spring. To be eligible, the resident must be in good standing (e.g. all dues, fines, and fees paid to date).</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">Are Board Meetings open to all residents? If so, where and when are they held?</button>
+									<div class="panel">
+									  <p>Yes, all board meeting are open to all residents. The Board holds formal quarterly meetings and monthly working meetings. All meeting dates and times are posted on the Calendar and Events tab.</p>
+									</div>
 
 									<hr class="major" />
-
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									
+									<h2>Amenities</h2>
 
 									<hr class="major" />
-
-									<h2>Magna etiam veroeros</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									
+									<h2>Committees</h2>
 
 									<hr class="major" />
+									
+									<h2>Fees</h2>
 
-									<h2>Lorem aliquam bibendum</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+									<hr class="major" />
+									
+									<h2>Pool</h2>
 
+									<hr class="major" />
+									
+									<h2>Architecture Modifications</h2>
+
+									<hr class="major" />
+									
+									<h2>Buying and Selling a Home</h2>
+
+									<hr class="major" />
+									
+									<h2>Budget</h2>
+
+									<hr class="major" />
+									
+									<h2>Other</h2>
 								</section>
 
 						</div>
@@ -105,11 +258,25 @@
 			</div>
 
 		<!-- Scripts -->
+			<script>
+				var acc = document.getElementsByClassName("accordion");
+				var i;
+				for (i = 0; i < acc.length; i++) {
+					acc[i].addEventListener("click", function() {
+				    	this.classList.toggle("active");
+				    	var panel = this.nextElementSibling;
+				    	if (panel.style.maxHeight) {
+				    		panel.style.maxHeight = null;
+				    	} else {
+				      		panel.style.maxHeight = panel.scrollHeight + "px";
+				    	} 
+				  	});
+				}
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
