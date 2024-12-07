@@ -6,18 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="./images/favicon.ico" rel="icon">
+		<script src="https://kit.fontawesome.com/1dcf71619f.js" crossorigin="anonymous"></script>
 		<style>
 			/* Styles the button */
 			.accordion {
-			  	background-color: ffffff;
-			  	color: #444;
+			  	box-shadow: inset 0 0 0 2px #D2D7D9;
 			  	cursor: pointer;
 			  	width: 100%;
-			  	border: none;
+				border-radius: 2em;
 			  	text-align: left;
+			  	text-wrap: pretty;
 			  	outline: none;
 			  	transition: 0.4s;
 			  	margin: 5px;
+			  	padding-right: 10px;
 			}
 			/* Unicode character for "plus" sign (+) */
 			.accordion:after{
@@ -66,12 +68,17 @@
 									<div class="content">
 										<header>
 											<h1>FAQ</h1>
-											<p>Frequently Asked Questions</p>
 										</header>
-										<p>If you have any questions that are not answered in this FAQ, please reach out to the board and let us know!</p>
-										<ul class="actions">
-											<li><a href="./contact_us.html" class="button big">Ask More Questions!</a></li>
-										</ul>
+										<p>Click to navigate to the associated section.</p>
+											<ul class="alt">
+												<li><a id="link" href="#general"><i class="fa-solid fa-house"></i> &nbspGeneral</a></li>
+												<li><a id="link" href="#amenities"><i class="fa-solid fa-dumbbell"></i> &nbspAmenities</a></li>
+												<li><a id="link" href="#committees"><i class="fa-solid fa-people-group"></i> &nbspCommittees</a></li>
+												<li><a id="link" href="#fees"><i class="fa-solid fa-hand-holding-dollar"></i> &nbspFees</a></li>
+												<li><a id="link" href="#pool"><i class="fas fa-swimmer"></i> &nbspPool</a></li>
+												<li><a id="link" href="#arch_mods"><i class="fas fa-tools"></i> &nbspArchitecture Modifications</a></li>
+												<li><a id="link" href="#budget"><i class="far fa-money-bill-alt"></i> &nbspBudget</a></li>
+											</ul>
 									</div>
 									<span class="image object">
 										<img src="images/WG Snow.jpg" alt="" />
@@ -80,7 +87,7 @@
 
 							<!-- Content -->
 								<section>
-									<h2>General</h2>
+									<a id="general"><h2><i class="fa-solid fa-house"></i> &nbspGeneral</h2></a>
 
 									<!-- Question -->
 									<button class="accordion">What is a Homeowners Association?</button>
@@ -96,7 +103,7 @@
 									</div>
 
 									<!-- Question -->
-									<button class="accordion">Where can I find a copy of the Maryland Homeowners Association Act?</button>
+									<button class="accordion">Where can I find a copy of the MD HOA Act?</button>
 									<div class="panel">
 										<p>
 											The Maryland Homeowners Association Act can be found on the <a href="https://mgaleg.maryland.gov/" target="_blank">MD General Assembly Website</a>. Go to Laws -> Statutes, select ‘Real Property’ under the ‘Articles’ dropdown and navigate to Section 11B. The MD HOA Act is section 11B-101 through 11B-118.
@@ -124,17 +131,21 @@
 										<p>Some of the governing documents for an HOA include (in hierarchical order):</p>
 										<ul>
 								    		<li><u>Plat</u> - A recorded map that shows the location of the community and its structures, including units, lots, common areas, and limited common areas. The plat outlines the jurisdiction of the association. (Also known as a subdivision map).</li>
-										    <li><u>Declaration of Covenants, Conditions & Restrictions (CC&R)</u> - Provides the HOA with the power to enforce certain rules of the association. This is required to be signed by new home owners, and constitutes the contract between the home owner and the association. The CC&Rs include the association's covenant for assessments, which gives the association the right to charge dues to members.</li>
+										    <li><u>Declaration of Covenants, Conditions & Restrictions (CC&R)</u> - Provides the HOA with the power to enforce certain rules of the association. This is required to be signed by new home owners, and constitutes the contract between the home owner and the association. The CC&Rs includes the association's covenant for assessments, which gives the association the right to charge dues to members.</li>
 										    <li><u>Articles of Incorporation</u> - Establishes the HOA as a legal entity (non-profit organization) and defines its name, purpose, and corporate structure.</li>
 										    <li><u>Bylaws</u> -  Outlines the duties and responsibilities of the board, including meeting requirements, how many seats are on the board, election procedures, and members' voting rights.</li>
-										    <li><u>Rules & Regulations </u> - Goes into more specifics compared to the CC&R. CC&R gives the HOA the right to enforce the rules and regulations, whereas the R&R specifies what is being enforced. The HOA has the authority to create new rules and regulations (subject to federal and state laws). If the R&R conflicts with the CC&R, the CC&R takes precedence.</li>
+										    <li><u>Rules & Regulations </u> - Goes into more specifics compared to the CC&R. CC&R gives the HOA the right to enforce the rules and regulations and documents some of those rules and regulations. The R&R provides greater detail into what is being enforced. The HOA has the authority to create new rules and regulations (subject to federal and state laws). If the R&R conflicts with the CC&R, the CC&R takes precedence.</li>
 								  		</ul>
 									</div>
 
 									<!-- Question -->
 									<button class="accordion">Where can in find the WG HOA Governing documents?</button>
 									<div class="panel">
-									 	<p>Navigate to Documents -> Governing Documents to find the CC&Rs, Articles of Incorporation, and Bylaws.</p>
+									 	<p>The WG HOA governing documents can be found in two locations:Navigate to Documents -> Governing Documents to find the CC&Rs, Articles of Incorporation, and Bylaws.</p>
+									 	<ul>
+									 		<li>The <a href="https://portal.dhbader.com/login" target="_blank">D.H. Bader Portal</a>.</li>
+									 		<li>The <a href="./documents.html">Documents Library</a> on this site.</li>
+									 	</ul>
 									</div>
 
 									<!-- Question -->
@@ -153,7 +164,7 @@
 									<!-- Question -->
 									<button class="accordion">Who is the HOA management company for Wilson’s Grove?</button>
 									<div class="panel">
-									 	<p>The management company for the WG HOA is D.H. Bader. Their company website is <a href="https://www.dhbader.com/">https://www.dhbader.com/</a>.</p>
+									 	<p>The management company for the WG HOA is D.H. Bader. Their company website is <a href="https://www.dhbader.com/" target="_blank">https://www.dhbader.com/</a>.</p>
 									</div>
 
 									<!-- Question -->
@@ -161,54 +172,71 @@
 									<div class="panel">
 									 	<p>The preferred avenue of communication with the WG HOA BoD begins with contacting the HOA management company (D.H. Bader). This can be done via 2 different methods:</p>
 										<ul>
-										    <li><u>Via this portal (preferred)</u> - Navigate to Requests, select ‘General Request’, fill out the provided form and submit. The WG HOA and DH Bader have access to view these requests.</li>
+										    <li><u>Via the <a href="https://portal.dhbader.com/login" target="_blank">D.H. Bader Portal</a> (preferred)</u> - When you get to the portal, Navigate to Requests, select ‘General Request’, fill out the provided form and submit. The WG HOA and DH Bader have access to view these requests.</li>
 										    <li><u>Direct to the management lead</u> - If you have not received a response via the portal, you can contact Amanda Rhodes via email - arhodes@dhbader.com</li>
 										</ul>
+										<p>If you have tried these avenues and have not received a response, you can contact the WG HOA BoD at <u>wilsonsgroveboard@gmail.com</u>. While this email address is monitored, the board will not respond to emails. Instead, the board will follow up with the management company and ensure your concern is addressed.</p>
 									</div>
 
 									<!-- Question -->
 									<button class="accordion">How do I become a member of the HOA Board?</button>
 									<div class="panel">
-								  		<p>The Board will hold elections for new board members once per year in the spring for any Board spots that are becoming vacant. To become a member, a resident may fill out an application and send it back to DH Bader when the call is put out in the spring. To be eligible, the resident must be in good standing (e.g. all dues, fines, and fees paid to date).</p>
+								  		<p>The Board will hold elections for new board members once per year in the spring for any vacant spots. To become a member, a resident may fill out an application and send it back to DH Bader when the call is put out in the spring. To be eligible, the resident must be in good standing (e.g. all dues, fines, and fees paid to date). The application will be mailed out in the spring when the call for new board members is sent to the home owners.</p>
 									</div>
 
 									<!-- Question -->
-									<button class="accordion">Are Board Meetings open to all residents? If so, where and when are they held?</button>
+									<button class="accordion">Are Board Meetings open to all residents?</button>
 									<div class="panel">
-									  <p>Yes, all board meeting are open to all residents. The Board holds formal quarterly meetings and monthly working meetings. All meeting dates and times are posted on the Calendar and Events tab.</p>
+									 	<p>Yes, all board meeting are open to all residents. The Board holds formal quarterly meetings and monthly working meetings. All meeting dates and times can be found on the Calendar and Events tab of the <a href="https://portal.dhbader.com/login" target="_blank">D.H. Bader Portal</a>. They will also be posted to the <a href="./calendar.html">Events Calendar</a> on this site.</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">What do I need to do if I am selling my home?</button>
+									<div class="panel">
+									 	<p>If you are selling your house, please visit <a href="https://www.homewisedocs.com" target="_blank">Homewise Docs</a> to order a resale package. An HOA resale package is a collection of documents that provides information about WG and the HOA. This includes the governing documents, property information, financial information, etc.</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">What do I do if I have a problem with a homeowner?</button>
+									<div class="panel">
+									 	<p>First and foremost, if police are required, please immediately reach out to the appropriate authorities. If that is not the case and if residents cannot resolve a situation between themselves, please reach out to the HOA management company:</p>
+									 	<ul>
+										    <li><u>Via the <a href="https://portal.dhbader.com/login" target="_blank">D.H. Bader Portal</a> (preferred)</u> - When you get to the portal, Navigate to Requests, select ‘General Request’, fill out the provided form and submit. The WG HOA and DH Bader have access to view these requests.</li>
+										    <li><u>Direct to the management lead</u> - If you have not received a response via the portal, you can contact Amanda Rhodes via email - arhodes@dhbader.com</li>
+										</ul>
+									  	<p>Another option is to reach out to the <a href="https://www.aacrc.info/our-services/" target="blank">Anne Arundel County Conflict Resolution Team</a>.</p>
+									</div>
+
+									<!-- Question -->
+									<button class="accordion">When is AACO trash collection for WG?</button>
+									<div class="panel">
+									 	<p>Wilson’s Grove trash collection occurs every Thursday morning. Please visit the <a href="https://www.aacounty.org/public-works/waste-management/curbside-collection/" target="blank">AACO Curbside Collection Schedule</a> for more details on country trash collection. Homeowners should place containers at their curbside after 7:00 pm the evening prior. Containers must be returned to the garage by the end of the pick-up day. All trash must be stored in closed receptacles, and all trash containers must be stored out of view at all times.</p>
 									</div>
 
 									<hr class="major" />
 									
-									<h2>Amenities</h2>
+									<a id="amenities"><h2><i class="fa-solid fa-dumbbell"></i> &nbspAmenities</h2></a>
 
 									<hr class="major" />
 									
-									<h2>Committees</h2>
+									<a id="committees"><h2><i class="fa-solid fa-people-group"></i> &nbspCommittees</h2></a>
 
 									<hr class="major" />
 									
-									<h2>Fees</h2>
+									<a id="fees"><h2><i class="fa-solid fa-hand-holding-dollar"></i> &nbspFees</h2></a>
 
 									<hr class="major" />
 									
-									<h2>Pool</h2>
+									<a id="pool"><h2><i class="fas fa-swimmer"></i> &nbspPool</h2></a>
 
 									<hr class="major" />
 									
-									<h2>Architecture Modifications</h2>
+									<a id="arch_mods"><h2><i class="fas fa-tools"></i> &nbspArchitecture Modifications</h2></a>
 
 									<hr class="major" />
 									
-									<h2>Buying and Selling a Home</h2>
+									<a id="budget"><h2><i class="far fa-money-bill-alt"></i> &nbspBudget</h2></a>
 
-									<hr class="major" />
-									
-									<h2>Budget</h2>
-
-									<hr class="major" />
-									
-									<h2>Other</h2>
 								</section>
 
 						</div>
